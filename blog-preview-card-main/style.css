@@ -1,0 +1,82 @@
+/* 1. Define the font */
+@font-face {
+  font-family: 'Figtree';
+  src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2'), /* Modern browser support */
+       url("/assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format('woff');   /* Fallback for older browsers */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Recommended: shows fallback text while font loads */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree" ,sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+body{
+    background-color: #F4D04E;
+    position: relative;
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    background-color: white;
+    width: 384px;
+    height: 522px;
+    border-radius: 20px;
+    padding: 24px;
+
+}
+.image{
+    width: 322px;
+    height: 200px;
+}
+.image img{
+    border-radius: 10px;
+}
+.card-body .tag{
+    background-color: #F4D04E;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin: 24px 0 12px;
+    font-weight: 900;
+
+}
+.title{
+    font-size: 24px;
+    font-weight: 900;
+    display: block;
+    margin: 12px 0;
+}
+
+.description{
+    color: #6B6B6B;
+    font-size: 16px;
+
+}
+.author{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 12px;
+}
+.author img{
+    width: 32px;
+}
+.author p{
+    font-size: 14px;
+    font-weight: bold;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+}
