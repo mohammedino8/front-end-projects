@@ -14,6 +14,83 @@
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Slate-300: hsl(212, 45%, 89%);
+--Slate-500: hsl(216, 15%, 48%);
+--Slate-900: hsl(218, 44%, 22%);
+}
+
+body{
+    background-color:var(--Slate-300);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;   /* مهم */
+    justify-content: center;
+    align-items: center;
+    margin: 0;                /* مهم */
+}
+
+.hero{
+    background-color: var(--White);
+    width: 250px;
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+
+.hero p{
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.par{
+    text-align: center;
+}
+
+.one{
+    font-weight: 700;
+    color: var(--Slate-900);
+}
+
+.two{
+    margin-top: 10px;
+    font-weight: 400;
+    color: var(--Slate-500);
+}
+
+.img{
+    text-align: center;
+}
+
+.img img{
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
   </style>
 </head>
 <body>
