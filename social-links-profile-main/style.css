@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+    font-family: "Inter" , sans-serif;
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    background-color: var(--Grey-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+.hero{
+    background-color: var(--Grey-800);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    min-height: 600px;
+}
+.img {
+    padding: 30px;
+
+}
+.img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+.name{
+    color: var(--White);
+    text-align: center;
+    margin-top: -10px;
+
+}
+.location{
+    color: var(--Green);
+    text-align: center;
+    margin-top: -10px;
+}
+.description{
+    margin: 30px 0 0 0;
+    color: var(--White);
+    font-weight: 600;
+}
+
+.links ul{
+    list-style: none;
+}
+.links ul li{
+    background-color: var(--Grey-700);
+    width: 85%;
+    height: 40px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    font-family: "Inter" ,sans-serif;
+    font-weight: bold;
+    
+}
+.links ul li:hover{
+    background-color: var(--Green);
+    
+}
+.links ul li:hover a{
+    color: var(--Grey-800);
+}
+.links ul li:last-child{
+    margin-bottom: 20px;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+}
