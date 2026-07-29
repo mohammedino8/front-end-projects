@@ -1,0 +1,194 @@
+
+/* =========================
+   Google Font
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* =========================
+   CSS Variables
+========================= */
+:root {
+  /* Primary Colors */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral Colors */
+  --grey-500: hsl(234, 12%, 34%);
+  --grey-400: hsl(212, 6%, 44%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+
+  --fs-body: 15px;
+}
+
+/* =========================
+   CSS Reset
+========================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Base Styles
+========================= */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  color: var(--grey-500);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+main{
+    margin-top: 5rem;
+    
+}
+
+/*section {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , auto);
+    gap: 1rem;
+
+}*/
+section{
+    width: min(90%, 1100px);
+    margin: 4rem auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+.middle{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+@media (max-width:768px){
+
+section{
+
+grid-template-columns:1fr;
+
+}
+
+.middle{
+
+display:contents;
+
+}
+
+}
+h1 {
+    color: var(--grey-400);
+    text-align: center;
+    font-weight: 300;
+    font-size: clamp(1.7rem, 5vw, 3rem);
+}
+h2{
+    color: var(--grey-500);
+    text-align: center;
+    font-weight: 600;
+    font-size: clamp(1.7rem, 5vw, 3rem);
+}
+#head-paragraph{
+    max-width: 80%;
+    display: block;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--grey-400);
+    
+}
+
+.card{
+    background:white;
+    padding:2rem;
+
+    border-radius:.5rem;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+.card h3 {
+    color: var(--grey-500);
+}
+.card p{
+    color: var(--grey-400);
+}
+.card img{
+    margin-left:auto;
+    margin-top:2rem;
+}
+.Supervisor{
+    border-top: solid  var(--cyan)  5px ; 
+    
+}
+.Supervisor h3{
+    margin: 1rem 0 0 2rem;
+}
+.Supervisor p{
+    margin-left: 2rem;
+    font-size: .6rem;
+    max-width: 80%;
+}
+.Team-Builder{
+    border-top: solid  var(--red)  5px ; 
+    border-radius: 0.4rem;
+}
+.Team-Builder h3{
+    margin: 1rem 0 0 2rem;
+    
+}
+.Team-Builder p{
+    margin-left: 2rem;
+    font-size: .6rem;
+    max-width: 80%;
+}
+
+
+.Karma{
+
+    border-top: solid  var(--orange)  5px ; 
+    border-radius: 0.4rem;
+}
+.Karma h3{
+    margin: 1rem 0 0 2rem;
+    
+}
+.Karma p{
+    margin-left: 2rem;
+    font-size: .6rem;
+    max-width: 80%;
+}
+
+
+.Calculator{
+
+    border-top: solid  var(--blue)  5px ; 
+    border-radius: 0.4rem;
+}
+.Calculator h3{
+    margin: 1rem 0 0 2rem;
+    
+}
+.Calculator p{
+    margin-left: 2rem;
+    font-size: .6rem;
+    max-width: 80%;
+}
