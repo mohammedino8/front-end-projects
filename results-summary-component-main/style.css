@@ -1,0 +1,188 @@
+:root{
+    /*primary*/
+    --LightRed: hsl(0, 100%, 67%) ;
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    
+    /*gradiants*/
+    
+    --LightSlateBlue : hsl(252, 100%, 67%);
+    --LightRoyalBlue : hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 1);
+    /*neutral*/
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%) ;
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%) ;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--PaleBlue);
+}
+main{
+    display: flex;
+    border-radius: 1.8rem;
+    background-color: var(--White);
+}
+@media screen and (max-width : 768px) {
+    main{
+        flex-direction: column;
+    }
+}
+.result {
+    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-image: linear-gradient(180deg ,var(--LightSlateBlue) , var(--LightRoyalBlue) );
+    align-items: center;
+    gap:2rem;
+    border-radius: 1.8rem;
+}
+.resultHeading{
+    color: var(--LightLavender);
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+.resultNum{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    background-image: linear-gradient( 180deg , var(--VioletBlue) , var(--LightRoyalBlue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: none;
+}
+.resultNum span{
+    font-size: 4rem;
+    color: var(--White);
+    font-weight: 700;
+}
+.resultNum div{
+    font-size: 0.8rem;
+    color: var(--LightLavender);
+}
+
+.spanMessage{
+    color: var(--White);
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+.message{
+    color: var(--LightLavender);
+    margin-bottom: 2rem;
+    width: 75%;
+    text-align: center;
+
+}
+.summary {
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    align-items: center;
+    gap:2rem;
+    border-radius: 1.8rem;
+    
+    
+    
+}
+.summaryHeading{
+    background-color: hsla(241, 72%, 46%, 0);
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    display: flex;
+    align-self: flex-start;
+    padding-left: 2.4rem;
+    
+    
+}
+.summary-items{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+}
+.summary-item{
+    display: flex;
+    height: 3rem;
+    width: 90%;
+    justify-content: space-between;
+    line-height: 3rem;
+}
+.summary-item div img{
+    width: 1.4rem;
+    
+}
+
+.summary-item .score { 
+    
+    font-weight: 400;
+}
+.summary-item .score span{ 
+    
+    font-weight: 600;
+}
+.Reaction {
+    background-color: hsl(0, 100%, 67% , 0.05);
+}
+    .Reaction div .text {
+    color: var(--LightRed);
+    
+}
+
+.Memory {
+    background-color: hsl(39, 100%, 56% , 0.05);
+}
+.Memory div .text {
+    color: var(--OrangeYellow);
+    
+}
+.Verbal {
+    background-color:  hsl(166, 100%, 37%, 0.05);
+}
+.Verbal div .text {
+    color: var(--GreenTeal);
+    
+}
+.Visual {
+    background-color:hsl(234, 85%, 45%, 0.05);
+}
+.Visual div .text {
+    color: var(--CobaltBlue);
+    
+}
+button{
+    background-color: var(--DarkGrayBlue);
+    font-weight: 700;
+    color: var(--White);
+    min-width: 80%;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+}
+button:hover{
+     background-color: var(--PersianBlue);
+}
