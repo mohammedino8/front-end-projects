@@ -193,7 +193,7 @@ color: hsl(219, 29%, 14%, 60%);
     grid-row: 1;
     }
     .Daniel::after{
-    content: url(/images/bg-pattern-quotation.svg);
+    content: url(./images/bg-pattern-quotation.svg);
     right: 20%;
     top: 5%;
     position: absolute;
